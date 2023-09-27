@@ -1,0 +1,51 @@
+.contact-section {
+  margin-bottom: var(--margin-5);
+  padding: 0 2rem;
+}
+
+iframe {
+  width: 100%;
+  height: 60rem;
+}
+
+.contact-info__title {
+  text-align: center;
+  font-weight: 400;
+  font-size: var(--font-size-7);
+  margin-bottom: var(--margin-2);
+}
+
+.contact-info__box {
+  display: grid;
+  /* justify-items: ; */
+  /* justify-content: center; */
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: var(--margin-3);
+}
+
+.contact-info__texticon-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-info__email {
+  font-size: var(--font-size-5);
+}
+
+.contact-info__phone {
+  font-size: var(--font-size-5);
+}
+
+.contact-info__address {
+  font-size: var(--font-size-5);
+}
+
+.contact-info__icon {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.vilamitay-instagram {
+  text-decoration: none;
+}

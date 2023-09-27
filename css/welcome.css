@@ -1,0 +1,53 @@
+/* WELCOME SECTION */
+
+.welcome-text__box {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-text {
+  font-family: "Raleway", sans-serif;
+  max-width: 60rem;
+  text-align: center;
+  font-size: var(--font-size-4);
+  font-weight: 600;
+  color: var(--text-color-green-dark);
+  letter-spacing: 0.1rem;
+  line-height: 1.65;
+  /* z-index: 9999; */
+}
+
+.lowerCase {
+  text-transform: lowercase;
+}
+
+.background-color__3 {
+  /* background-color: #738663; */
+  /* position: relative; */
+
+  /* object-fit: cover; */
+  padding: 9.6rem 0;
+  /* margin-bottom: var(--margin-5); */
+}
+
+/* .welcome-section::before {
+  content: "";
+  position: absolute;
+  top: -15%;
+  left: 0;
+  height: 50rem;
+  width: 100%;
+  background-image: url(../imgs/test3.png);
+  background-size: cover;
+
+  z-index: 1;
+} */
+
+.section-bgd-title {
+  text-align: center;
+  position: relative;
+  font-size: var(--font-size-title-2);
+  color: #f1f3ef;
+  z-index: 999;
+  margin-bottom: var(--margin-2);
+}

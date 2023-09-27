@@ -1,0 +1,87 @@
+/* REVIEW CARDS */
+
+.review-section {
+  margin-bottom: var(--margin-5);
+}
+
+.review-cards {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: var(--text-color-green-dark);
+  /* max-width: 42rem; */
+  /* box-shadow: 1.2rem 1rem 1rem 0 rgba(0, 0, 0, 0.2); */
+}
+
+.review-cards__user {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--text-color-white);
+  margin-bottom: var(--margin-1);
+}
+
+.review-cards__user-name {
+  font-size: var(--font-size-5);
+  /* font-family: "The Nautigal", cursive; */
+}
+.review-cards__user-date {
+  font-size: var(--font-size-2);
+}
+
+.review-cards__text {
+  color: var(--text-color-white);
+  font-size: var(--font-size-3);
+  /* line-height: 1.5; */
+}
+
+.review-cards__user-photo {
+  width: 8rem !important;
+  height: 8rem !important;
+  border-radius: 50%;
+}
+
+/* For the carousel arrows to be centered */
+.owl-reviews .nav-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 50% !important;
+}
+
+.owl-reviews .prev-slide {
+  height: 3.6rem;
+  width: 3.6rem;
+  background-image: url(../imgs/icons/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  left: -3.5rem;
+}
+.owl-reviews .next-slide {
+  height: 3.6rem;
+  width: 3.6rem;
+  background-image: url(../imgs/icons/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  right: -3.5rem;
+}
+.owl-reviews .prev-slide:hover {
+  height: 3.6rem;
+  width: 3.6rem;
+  background-image: url(../imgs/icons/arrow-left-active.svg);
+}
+.owl-reviews .next-slide:hover {
+  height: 3.6rem;
+  width: 3.6rem;
+  background-image: url(../imgs/icons/arrow-right-active.svg);
+}
+
+.owl-reviews .owl-stage-outer {
+  overflow: hidden;
+}
+
+.owl-reviews .owl-item {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.owl-reviews .owl-item.active {
+  opacity: 1;
+}

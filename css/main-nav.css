@@ -1,0 +1,162 @@
+/* || Main Navigation || */
+
+.sticky-nav {
+  z-index: 988;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 6rem;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+
+  /* margin-bottom: 25rem; */
+
+  transition: all 0.5s;
+}
+
+/* MAIN-NAV when reaching other sections */
+.main-nav__darker {
+  background-color: rgba(59, 58, 58, 1);
+  /* backdrop-filter: blur(0.7rem); */
+}
+
+.main-nav__links {
+  display: flex;
+  gap: 3rem;
+
+  list-style: none;
+}
+
+.main-nav__link,
+.main-nav__link:link,
+.main-nav__link:visited {
+  text-decoration: none;
+  font-size: var(--font-size-3);
+  color: var(--text-color-white);
+  text-transform: uppercase;
+  font-weight: 500;
+
+  transition: all 0.5s;
+
+  position: relative;
+}
+
+.main-nav__link:link::after,
+.main-nav__link:visited::after {
+  bottom: -0.4rem;
+  content: "";
+  display: block;
+  height: 0.2rem;
+  left: 0;
+  position: absolute;
+  background: #fff;
+  opacity: 0.6;
+  transition: width 0.7s ease 0s, opacity 0.3s ease 0s;
+  width: 0;
+}
+
+.main-nav__link:hover,
+.main-nav__link:active {
+  color: #fff;
+  cursor: pointer;
+}
+
+.main-nav__link:hover::after,
+.main-nav__link:active::after {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.logo {
+  cursor: pointer;
+  width: 11rem;
+  height: 11rem;
+
+  transition: all 0.5s;
+}
+
+.logo-smaller {
+  width: 6rem;
+  height: 6rem;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* hamburger icon */
+.hamburger-menu {
+  display: none;
+}
+
+/* dropdown menu */
+.dropdown-menu {
+  display: flex;
+  visibility: hidden;
+  gap: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  width: 25%;
+  padding-top: 5%;
+  z-index: 900;
+  top: 0;
+  left: 0;
+  height: 100vh;
+
+  background-color: rgba(59, 58, 58, 1);
+
+  list-style: none;
+  transform: translateX(-100%);
+  animation-name: navbarSlideClose;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 1000px) {
+  .main-nav__links {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+  }
+
+  .open {
+    animation-duration: 0.5s;
+    animation-name: navbarSlideOpen;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes navbarSlideOpen {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes navbarSlideClose {
+  0% {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+}

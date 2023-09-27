@@ -1,0 +1,38 @@
+:root {
+  --text-color-white: #fff;
+  --text-color-green-dark: #2b8a3e;
+  --text-color-green-light: #69db7c;
+
+  /* accommodations colors */
+  --cards-bg-color: #fff;
+  /* reviews colors */
+  --reviews-bg-color: #2b8a3e;
+  /* Body background color */
+  --body-background-color: #fff9f2;
+  /* --body-background-color: #2b478a; */
+  /* --body-background-color: #c1ebc9; */
+
+  /* font size reusable */
+  --font-size-1: 1.2rem;
+  --font-size-2: 1.6rem;
+  --font-size-3: 1.8rem;
+  --font-size-4: 2rem;
+  --font-size-5: 2.4rem;
+  --font-size-6: 3rem;
+  --font-size-7: 3.6rem;
+
+  --font-size-title-1: 4rem;
+  --font-size-title-2: 6rem;
+  --font-size-title-3: 8rem;
+  --font-size-title-4: 10rem;
+
+  /* margin reusable */
+  --margin-5: 9.6rem;
+  --margin-4: 6rem;
+  --margin-3: 4.8rem;
+  --margin-2: 2.4rem;
+  --margin-1: 1.2rem;
+
+  /* box-shadow */
+  --box-shadow-1: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+}

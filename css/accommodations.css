@@ -1,0 +1,182 @@
+/* || ACCOMMODATIONS SECTION || */
+
+.accom-cards {
+  padding: 0 2rem;
+}
+
+.accom-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+
+  background-color: #fff;
+  box-shadow: var(--box-shadow-1);
+  margin-bottom: var(--margin-5);
+}
+
+.accom-content__middle {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.accom-content__photo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  /* height: 10%; */
+}
+
+.accom-content__box {
+  padding: 1rem 3rem;
+  min-width: 100%;
+}
+
+.accom-content__title {
+  font-size: var(--font-size-title-1);
+  color: var(--text-color-green-dark);
+  text-align: center;
+  margin-bottom: var(--margin-1);
+  margin-top: 1rem;
+  font-family: "Caveat", cursive;
+  font-weight: 500;
+}
+
+.accom-content__descr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: var(--margin-2);
+}
+
+.accom-content__descr--text {
+  letter-spacing: 0.05rem;
+  font-size: var(--font-size-4);
+  font-weight: 600;
+}
+
+.accom-content__descr--icons {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}
+
+.accom-content__descr--icon {
+  height: 3.6rem;
+  width: 3.6rem;
+}
+
+.icon-text {
+  font-size: var(--font-size-2);
+}
+
+/* Carousel Owl */
+
+/* .carousel-wrap {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+.owl-carousel .owl-nav {
+  overflow: hidden;
+  height: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--text-color-green-dark);
+}
+
+.owl-carousel .nav-btn {
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 70px !important;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.owl-carousel .prev-slide {
+  background: url(../imgs/icons/nav-icon.png) no-repeat scroll 0 0;
+  left: -23px;
+}
+.owl-carousel .next-slide {
+  background: url(../imgs/icons/nav-icon.png) no-repeat scroll -24px 0px;
+  right: -23px;
+}
+.owl-carousel .prev-slide:hover {
+  background-position: 0px -53px;
+}
+.owl-carousel .next-slide:hover {
+  background-position: -24px -53px;
+} */
+
+/* FOR THE CAROUSEL ARROWS AND POSITIONING */
+
+/* .carousel-wrap {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+} */
+
+/* ////////////////////// */
+
+.owl-stage .owl-item a img {
+  width: 20rem;
+  height: 17.5rem;
+  object-fit: cover;
+}
+
+.owl-accom .owl-nav {
+  overflow: hidden;
+  height: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--text-color-green-dark);
+}
+
+.owl-accom .nav-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 7rem !important;
+}
+
+.owl-accom .owl-prev.disabled,
+.owl-accom .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.owl-accom .prev-slide {
+  height: 2.4rem;
+  width: 2.4rem;
+  background-image: url(../imgs/icons/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  left: -2.5rem;
+}
+.owl-accom .next-slide {
+  height: 2.4rem;
+  width: 2.4rem;
+  background-image: url(../imgs/icons/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  right: -2.5rem;
+}
+.owl-accom .prev-slide:hover {
+  height: 2.4rem;
+  width: 2.4rem;
+  background-image: url(../imgs/icons/arrow-left-active.svg);
+}
+.owl-accom .next-slide:hover {
+  height: 2.4rem;
+  width: 2.4rem;
+  background-image: url(../imgs/icons/arrow-right-active.svg);
+}
